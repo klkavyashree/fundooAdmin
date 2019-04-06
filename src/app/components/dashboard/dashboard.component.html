@@ -1,0 +1,66 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-expand-md  navbar-dark bg-dark ">
+  <div fxLayoutAlign='center center' class="text">
+  <h2>FundooAdmin</h2>
+</div>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active"></li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <ul><button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="logout()">Logout</button></ul>>
+     <ul> <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)='approve()' id="question">show Q & A</button></ul>>
+    </form>
+  </div>
+</nav>
+<div class="row text-center justify-content-center mainCard">
+
+  <div class="col-sm-4 col-lg-3 ">
+    <div class="card text-center  advance">
+      <div class="card-header">
+        <h4>Advance User</h4>
+      </div>
+      <div class="card-body">
+
+        <p class="card-text">{{advance}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-lg-3 ">
+    <div class="card basic">
+      <div class="card-header">
+        <h4>Basic User</h4>
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{basic}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <input type="text" id="myInput" [(ngModel)]="searchword" (keyup)="onkeypress($event)" placeholder="search names here"
+    title="Type in a name" class="container-fluid">
+  <div class="table-responsive-xl fi tablediv">
+    <table class="table table-hover ">
+      <caption>List of users</caption>
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">FirstName</th>
+          <th scope="col">LastName</th>
+          <th scope="col">Email</th>
+          <th scope="col">Service</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let array of userlist | serchuser : searchword ; let i = index">
+          <th scope="row">{{i+1}}</th>
+          <td>{{array.firstName}}</td>
+          <td>{{array.lastName}}</td>
+          <td>{{array.email}}</td>
+          <td>{{array.service}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

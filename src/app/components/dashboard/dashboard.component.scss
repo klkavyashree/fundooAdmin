@@ -1,0 +1,49 @@
+@import '../../../scss/variable.scss';
+.text{
+    color: $white
+}
+#myInput {
+   
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+
+
+  .mainCard{
+      position: relative;
+      margin-top: 60px;
+
+  }
+
+  .card{
+      position: relative;
+      margin-top: 15px;
+      margin-bottom: 0px;
+  }
+  .advance:hover{
+      width: 105%;
+      height: auto;
+  }
+  .basic:hover{
+    width: 105%;
+    height: auto;
+}
+table{
+    table-layout: fixed;
+}
+
+.tablediv{  
+  
+    border: 2px solid ;
+    
+    overflow-x: hidden;  
+}
+
+.tablediv::-webkit-scrollbar{
+    width: 10px;
+}
