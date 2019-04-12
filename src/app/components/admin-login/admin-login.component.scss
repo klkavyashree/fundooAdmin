@@ -1,71 +1,80 @@
 @import "../../../scss/mixins.scss";
 @import "../../../scss/variable.scss";
-.F{
-    color:$blue;
-}
-.u{
-    color:red;
-}
-.n{
-    color:$lightblue
-}
-.d{
-    color:$green
-}
-.o{
-    color:$bluebtn;
-}
-.o1{
-    color:$mixblue
-}
-h2{
-    color: $black;
-    font-weight: 500;
-    margin:-1%;
-}
-h4{
-    color: black;
-    font-weight: 500
-}
+// .F{
+//     color:$blue;
+// }
+// .u{
+//     color:red;
+// }
+// .n{
+//     color:$lightblue
+// }
+// .d{
+//     color:$green
+// }
+// .o{
+//     color:$bluebtn;
+// }
+// .o1{
+//     color:$mixblue
+// }
+// h2{
+//     color: $black;
+//     font-weight: 500;
+//     margin:-1%;
+// }
+// h4{
+//     color: black;
+//     font-weight: 500
+// }
 
-.btn{
-    background: $bluebtn;
-    color:$white;
+// .btn{
+//     background: $bluebtn;
+//     color:$white;
 
-    width: 10%;
-    float:right;
-    text-align: center
+//     width: 10%;
+//     float:right;
+//     text-align: center
       
-}
+// }
 
-.help-block{
-    font-size: 0.8em;
-    text-align: center;
-    color: red;
-}
-.msg{
-    font-size: 0.8em;
-    text-align: center;
-    color: red;
-}
+// .help-block{
+//     font-size: 0.8em;
+//     text-align: center;
+//     color: red;
+// }
+// .msg{
+//     font-size: 0.8em;
+//     text-align: center;
+//     color: red;
+// }
 
-  .main{
-      height: 100vh;
-  }
-  .email mat-form-field{
-      width: 70%
-  }
-  .password mat-form-field{
-           width: 71%
-    }
+//   .main{
+//       height: 100vh;
+//   }
+//   .email mat-form-field{
+//       width: 70%
+//   }
+//   .password mat-form-field{
+//            width: 71%
+//     }
   
   
-  @media screen and (max-width:599px){
-    #password mat-form-field{
-        width: 40%
-        }
+//   @media screen and (max-width:599px){
+//     #password mat-form-field{
+//         width: 40%
+//         }
   
-    #email mat-form-field{
-            width: 40%
-            }
-  }
+//     #email mat-form-field{
+//             width: 40%
+//             }
+//   }
+.modal-content{
+    background-color: rgb(190, 219, 219);
+}
+.btn-link{
+    color:white;
+}
+.modal-heading h2{
+    color:#ffffff;
+}

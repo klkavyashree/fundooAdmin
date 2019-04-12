@@ -32,11 +32,11 @@
             </tr>
           </thead>
           <tbody>
-              <tr *ngFor="let array of questionsList | serchuser : searchword ; let i = index">
+              <tr *ngFor="let array of questionsList  ; let i = index">
                 <th scope="row">{{i+1}}</th>
                 <td innerHtml='{{array.message}}'></td>
-                <td><button type="button" class="btn btn-light" (click)='approve(array.id)'>Approve</button></td>
-                <td><button type="button" class="btn btn-light" (click)='reject(array.id)'>Reject</button></td>
+                <td><button type="button" class="btn btn-light" (click)='approve(array)'>Approve</button></td>
+                <td><button type="button" class="btn btn-light" (click)='reject(array)'>Reject</button></td>
               </tr>
             </tbody>
     </table>

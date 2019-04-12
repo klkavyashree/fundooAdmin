@@ -30,14 +30,17 @@ parentId=[]
   home(){
     this.router.navigate(['dashboard'])
   }
-  approve(id){
-      this.user.approve(id).subscribe(resp=>{
+  approve(array){
+      this.user.approve(array.id).subscribe(resp=>{
         console.log(resp)
+        let ind = this.questionsList.indexOf(array)
+        this.questionsList.splice(ind,1)
       })
   }
-  reject(id){
-      this.user.reject(id).subscribe(resp=>{
-        console.log(resp)
+  reject(array){
+      this.user.reject(array.id).subscribe(resp=>{
+        let ind = this.questionsList.indexOf(array)
+        this.questionsList.splice(ind,1)
       })
   }
 
