@@ -47,7 +47,9 @@ basic:number=0;
     localStorage.clear();
     this.router.navigate(['login']);
   }
-
+  orderApprove(){
+    this.router.navigate(['order'])
+  }
 
   
 }

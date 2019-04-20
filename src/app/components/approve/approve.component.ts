@@ -30,6 +30,9 @@ parentId=[]
   home(){
     this.router.navigate(['dashboard'])
   }
+  orderApprove(){
+    this.router.navigate(['order'])
+  }
   approve(array){
       this.user.approve(array.id).subscribe(resp=>{
         console.log(resp)

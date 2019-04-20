@@ -22,4 +22,13 @@ export class UserService {
   reject(id){
     return this.http.post('questionAndAnswerNotes/reject/'+id,'')
   }
+  adminApproveOrder(data){
+    return this.http.post('productcarts/adminCompleteOrder',data)
+  }
+  adminRejectOrder(data){
+    return this.http.post('productcarts/adminCancelOrder',data)
+  }
+  getUserCartList(){
+    return this.http.getHttp('productcarts/userCartList')
+  }
 }

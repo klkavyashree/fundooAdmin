@@ -1,0 +1,28 @@
+<nav class="navbar fixed-top  navbar-dark bg-dark " >
+    <img src="../../../assets/images/keep_48dp.png" width="40" height="40" >
+  <div   class="navbar-brand align-middle">Order Approve</div>
+  <span class="align-middle"></span>
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="home()">Home</button>
+  <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)='approve()' id="question">show Q & A</button> -->
+</nav>
+<table class="table table-striped" style="margin-top:70px">
+    <thead  class="thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Approve</th>
+        <th scope="col">Reject</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let array of orderList'>
+        <td>{{array.user.firstName}}</td>
+        <td>{{array.user.addresses[0].address}}</td>
+        <td> {{array.product.name}}</td>
+        <td><button type="button" class="btn btn-light" (click)='approveOrder(array)'>Approve</button></td>
+        <td><button type="button" class="btn btn-light" (click)='reject(array)'>Reject</button></td>
+      </tr>
+    </tbody>
+  </table>
+ 

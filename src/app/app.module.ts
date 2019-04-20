@@ -14,6 +14,7 @@ import { AppMaterial } from './app.meterial.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SerchuserPipe } from './pipes/searchUser/serchuser.pipe';
 import { ApproveComponent } from './components/approve/approve.component';
+import { OrderApproveComponent } from './components/order-approve/order-approve.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ApproveComponent } from './components/approve/approve.component';
     DashboardComponent,
     SerchuserPipe,
     ApproveComponent,
+    OrderApproveComponent,
   ],
   imports: [
     BrowserModule,
